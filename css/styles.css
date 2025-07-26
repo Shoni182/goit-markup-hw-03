@@ -1,0 +1,211 @@
+/* Common */
+/* font  */
+:root {
+  --main-font: "Roboto", sans-serif;
+  --logo-font: "Raleway", sans-serif;
+  --main-font-style: normal;
+}
+/* color */
+:root {
+  --iris: #4d5ae5;
+  --ocean: #404bbf;
+  --navy-blue: #2e2f42;
+  --green: #31d0aa;
+  --slate: #434455;
+  --light-slate: #8e8f99;
+  --cornflower: #e7e9fc;
+  --cloud: #f4f4fd;
+  --navy-blue-modal: #2e2f42;
+  --grey: #2e2f42;
+  --white: #ffffff;
+  --dairy: #fcfcfc;
+}
+body {
+  font-family: var(--main-font);
+  background-color: var(--white);
+  color: var(--slate);
+}
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*header and adress*/
+.header {
+}
+.logo {
+  font-family: var(--logo-font);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+span {
+  color: var(--navy-blue);
+}
+.logo {
+  color: var(--iris);
+}
+/*header - navigation*/
+.header-nav {
+}
+.header-nav-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--grey);
+}
+.header-nav-link:active,
+.header-nav-link:focus,
+.header-nav-link:hover {
+  color: var(--ocean);
+}
+
+.navigation-list {
+}
+address {
+  font-style: normal;
+}
+.address-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+}
+.address-text:focus,
+.address-text:hover {
+  color: var(--ocean);
+}
+
+/*1 section - hero*/
+.hero-section {
+  background-color: var(--navy-blue);
+}
+.hero-section-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  font-style: var(--main-font-style);
+  text-align: center;
+  color: var(--white);
+}
+.hero-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  background-color: var(--iris);
+  color: var(--white);
+  cursor: pointer;
+}
+.hero-btn:focus,
+.hero-btn:hover {
+  background-color: var(--ocean);
+}
+
+/*2 section - benefits*/
+.benefits-section {
+}
+.visually-hidden {
+}
+
+.benefits-list {
+}
+.benefits-list-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+}
+.benefits-list-desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/*3 section - team card*/
+.team-card-section {
+  background-color: var(--cloud);
+}
+.team-card-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+  text-align: center;
+  text-transform: capitalize;
+}
+.team-card-list {
+}
+.team-card {
+  background-color: var(--white);
+}
+.team-card-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+  text-align: center;
+}
+.team-card-role {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+/*4 section - portfolio*/
+.portfolio-section {
+}
+.portfolio-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+  text-align: center;
+  text-transform: capitalize;
+}
+.portfolio-list {
+}
+.portfolio-card {
+}
+.portfolio-card-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+}
+.portfolio-card-desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+/*footer- portfolio*/
+.footer-section {
+  background-color: var(--navy-blue);
+}
+.footer-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--cloud);
+}
+.footer-logo-studio {
+  color: var(--cloud);
+}
