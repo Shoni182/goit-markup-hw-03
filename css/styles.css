@@ -1,11 +1,13 @@
-/* Common */
-/* font  */
+/* ============================
+               Common
+   ============================ */
+/****** Fonts ******/
 :root {
   --main-font: "Roboto", sans-serif;
   --logo-font: "Raleway", sans-serif;
   --main-font-style: normal;
 }
-/* color */
+/******** Color Palette *********/
 :root {
   --iris: #4d5ae5;
   --ocean: #404bbf;
@@ -26,7 +28,9 @@ body {
   color: var(--slate);
 }
 
-/* resetting settings*/
+/* ============================
+           Reset Configurations
+   ============================ */
 
 h1,
 h2,
@@ -52,8 +56,9 @@ img {
 a {
   text-decoration: none;
 }
-
-/* common container */
+/* ============================
+             Main Container 
+   ============================ */
 .page-container {
   min-height: 100vh;
   display: flex;
@@ -65,14 +70,16 @@ main {
 }
 
 .container {
-  max-width: 1440px;
-  padding: 0 156px;
+  max-width: 1128px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
-/*header and adress*/
+/* ============================
+               Header 
+   ============================ */
 .header {
-  border-bottom: 2px;
+  border-bottom: 1px;
   width: 100%;
   box-sizing: border-box;
 }
@@ -90,10 +97,9 @@ span {
 .logo {
   color: var(--iris);
 }
-/*header - navigation*/
+/******** header - navigation *********/
+
 .header-nav {
-  /* padding-top: 24px;
-  padding-bottom: 24px; */
 }
 .header-nav-link {
   font-weight: 500;
@@ -129,7 +135,9 @@ address {
   color: var(--ocean);
 }
 
-/*1 section - hero*/
+/* ============================
+             Section 1 Hero 
+   ============================ */
 .hero-section {
   background-color: var(--navy-blue);
 }
@@ -156,7 +164,9 @@ address {
   background-color: var(--ocean);
 }
 
-/*2 section - benefits*/
+/* ============================
+               Section 2 - Benefits
+   ============================ */
 .benefits-section {
 }
 .visually-hidden {
@@ -188,7 +198,10 @@ address {
   letter-spacing: 0.02em;
 }
 
-/*3 section - team card*/
+/* ============================
+             Section 3 - team card
+   ============================ */
+
 .team-card-section {
   background-color: var(--cloud);
 }
@@ -222,7 +235,9 @@ address {
   text-align: center;
 }
 
-/*4 section - portfolio*/
+/* ============================
+               Section 4 - Portfolio 
+   ============================ */
 .portfolio-section {
 }
 .portfolio-title {
@@ -251,7 +266,9 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-/*footer- portfolio*/
+/* ============================
+               Footer 
+   ============================ */
 .footer-section {
   background-color: var(--navy-blue);
 }
@@ -262,6 +279,7 @@ address {
   letter-spacing: 0.02em;
   color: var(--cloud);
 }
+/******** logo  *********/
 .footer-logo-studio {
   color: var(--cloud);
 }
