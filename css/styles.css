@@ -55,6 +55,7 @@ img {
 
 a {
   text-decoration: none;
+  box-sizing: border-box;
 }
 /* ============================
              Main Container 
@@ -76,13 +77,30 @@ main {
 }
 
 /* ============================
+               Common Section styles 
+   ============================ */
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+/* ============================
                Header 
    ============================ */
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
 .header {
   border-bottom: 1px;
   width: 100%;
   box-sizing: border-box;
 }
+
+/* --------
+         Logo Header
+----------*/
 .logo {
   font-family: var(--logo-font);
   text-transform: uppercase;
@@ -90,17 +108,31 @@ main {
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  box-sizing: border-box;
+  margin-right: 76px;
 }
 span {
   color: var(--navy-blue);
 }
 .logo {
   color: var(--iris);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
-/******** header - navigation *********/
 
+/* --------
+         Header Navigation
+----------*/
 .header-nav {
+  display: flex;
+  flex-direction: row;
 }
+.header-nav-list {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
 .header-nav-link {
   font-weight: 500;
   font-size: 16px;
@@ -120,15 +152,28 @@ span {
 
 .navigation-list {
 }
+/* --------
+         Address
+----------*/
+
 address {
   font-style: normal;
 }
-.address-text {
+
+.header-adress-list {
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+}
+.address-link {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .address-text:focus,
 .address-text:hover {
@@ -136,7 +181,7 @@ address {
 }
 
 /* ============================
-             Section 1 Hero 
+             Section 1  - Hero 
    ============================ */
 .hero-section {
   background-color: var(--navy-blue);
@@ -199,7 +244,7 @@ address {
 }
 
 /* ============================
-             Section 3 - team card
+             Section 3 - Team Card
    ============================ */
 
 .team-card-section {
@@ -279,7 +324,9 @@ address {
   letter-spacing: 0.02em;
   color: var(--cloud);
 }
-/******** logo  *********/
+/* --------
+         footer Logo
+----------*/
 .footer-logo-studio {
   color: var(--cloud);
 }
