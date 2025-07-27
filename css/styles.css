@@ -53,8 +53,8 @@ ol {
 
 img {
   display: block;
-  max-width: 100%;
   height: auto;
+  max-width: 100%;
 }
 
 a {
@@ -65,9 +65,9 @@ a {
          Main Container 
    ============================ */
 .page-container {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 main {
@@ -97,9 +97,9 @@ main {
   justify-content: space-between;
 }
 .header {
+  box-sizing: border-box;
   border-bottom: 1px;
   width: 100%;
-  box-sizing: border-box;
 }
 
 /* --------
@@ -107,13 +107,13 @@ main {
 ----------*/
 .logo {
   font-family: var(--logo-font);
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 18px;
+  box-sizing: border-box;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  box-sizing: border-box;
+  font-weight: 700;
+  font-size: 18px;
   margin-right: 76px;
+  text-transform: uppercase;
 }
 span {
   color: var(--navy-blue);
@@ -138,13 +138,13 @@ span {
 }
 
 .header-nav-link {
+  display: block;
+  box-sizing: border-box;
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.5;
+  font-size: 16px;
   letter-spacing: 0.02em;
   color: var(--grey);
-  box-sizing: border-box;
-  display: block;
   padding-top: 24px;
   padding-bottom: 24px;
 }
