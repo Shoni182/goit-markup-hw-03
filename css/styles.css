@@ -1,5 +1,5 @@
-/* ============================
-               Common
+/* 
+         Common
    ============================ */
 /****** Fonts ******/
 :root {
@@ -28,8 +28,8 @@ body {
   color: var(--slate);
 }
 
-/* ============================
-           Reset Configurations
+/* 
+       Reset Configurations
    ============================ */
 
 h1,
@@ -45,20 +45,24 @@ p {
 ul,
 ol {
   list-style-type: none;
-  margin: 0;
-  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding: 0;
 }
 
 img {
-  box-sizing: border-box;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 a {
   text-decoration: none;
-  box-sizing: border-box;
+  display: inline-block;
 }
 /* ============================
-             Main Container 
+         Main Container 
    ============================ */
 .page-container {
   min-height: 100vh;
@@ -76,19 +80,19 @@ main {
   margin: 0 auto;
 }
 
-/* ============================
-               Common Section styles 
+/* 
+       Common Section styles 
    ============================ */
 
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-/* ============================
-               Header 
-   ============================ */
+/*
+       Header 
+============================*/
 
-.header-container {
+.header-section-block {
   display: flex;
   justify-content: space-between;
 }
@@ -180,12 +184,11 @@ address {
   color: var(--ocean);
 }
 
-/* ============================
-             Section 1  - Hero 
+/* 
+       Section 1  - Hero 
    ============================ */
-.hero-section {
+.hero-section-block {
   background-color: var(--navy-blue);
-  padding-top: 118px;
 }
 .hero-title-btn {
   display: flex;
@@ -200,7 +203,7 @@ address {
   letter-spacing: 0.02em;
   font-style: var(--main-font-style);
   width: 48%;
-  margin-bottom: 48px;
+  padding-bottom: 48px;
   color: var(--white);
 }
 .hero-btn {
@@ -211,9 +214,9 @@ address {
   background-color: var(--iris);
   color: var(--white);
   cursor: pointer;
-
+  border-radius: 4px;
+  border-style: none;
   padding: 16px 32px;
-  margin-bottom: 118px;
 }
 
 .hero-btn:focus,
@@ -221,8 +224,8 @@ address {
   background-color: var(--ocean);
 }
 
-/* ============================
-               Section 2 - Benefits
+/* 
+       Section 2 - Benefits
    ============================ */
 .benefits-section {
 }
@@ -256,6 +259,7 @@ address {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--navy-blue);
+  padding-bottom: 8px;
 }
 .benefits-list-desc {
   font-weight: 400;
@@ -264,11 +268,11 @@ address {
   letter-spacing: 0.02em;
 }
 
-/* ============================
-             Section 3 - Team Card
+/* 
+       Section 3 - Team Card
    ============================ */
 
-.team-card-section {
+.team-section-block {
   background-color: var(--cloud);
 }
 .team-card-title {
@@ -279,12 +283,25 @@ address {
   color: var(--navy-blue);
   text-align: center;
   text-transform: capitalize;
+  padding-bottom: 74px;
 }
 .team-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  flex: content;
 }
+
 .team-card {
   background-color: var(--white);
+  width: calc((100% - 72px) / 4);
+  padding-bottom: 32px;
 }
+
+.team-image {
+  margin-bottom: 32px;
+}
+
 .team-card-name {
   font-weight: 500;
   font-size: 20px;
@@ -301,11 +318,10 @@ address {
   text-align: center;
 }
 
-/* ============================
-               Section 4 - Portfolio 
+/* 
+         Section 4 - Portfolio 
    ============================ */
-.portfolio-section {
-}
+
 .portfolio-title {
   font-weight: 700;
   font-size: 36px;
@@ -314,10 +330,23 @@ address {
   color: var(--navy-blue);
   text-align: center;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 .portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 .portfolio-card {
+  width: calc((100% - 72px) / 3);
+  /* padding-bottom: 32px; */
+  border: 1px solid #e7e9fc;
+}
+.portfolio-img {
+  /* margin-bottom: 32px; */
+}
+.portfolio-block {
+  padding: 32px 16px;
 }
 .portfolio-card-title {
   font-weight: 500;
@@ -332,10 +361,10 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-/* ============================
-               Footer 
+/* 
+       Footer 
    ============================ */
-.footer-section {
+.footer-block {
   background-color: var(--navy-blue);
 }
 .footer-text {
@@ -344,10 +373,11 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--cloud);
+  width: 28%;
 }
 /* --------
          footer Logo
 ----------*/
-.footer-logo-studio {
+.footer-logo {
   color: var(--cloud);
 }
