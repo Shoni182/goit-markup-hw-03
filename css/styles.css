@@ -97,7 +97,7 @@ main {
   justify-content: space-between;
 }
 .header {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   border-bottom: 1px solid #e7e9fc;
   width: 100%;
 }
