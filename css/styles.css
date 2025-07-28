@@ -75,7 +75,7 @@ main {
 }
 
 .container {
-  max-width: 1128px;
+  max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -98,7 +98,7 @@ main {
 }
 .header {
   box-sizing: border-box;
-  border-bottom: 1px;
+  border-bottom: 1px solid #e7e9fc;
   width: 100%;
 }
 
@@ -120,20 +120,21 @@ span {
 }
 .logo {
   color: var(--iris);
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 /* --------
          Header Navigation
 ----------*/
+.header-logo {
+  margin-right: 76px;
+}
 .header-nav {
   display: flex;
-  flex-direction: row;
+  align-items: center;
 }
+
 .header-nav-list {
   display: flex;
-  flex-direction: row;
   gap: 40px;
 }
 
@@ -145,8 +146,7 @@ span {
   font-size: 16px;
   letter-spacing: 0.02em;
   color: var(--grey);
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding: 24px 0;
 }
 .header-nav-link:active,
 .header-nav-link:focus,
@@ -166,7 +166,6 @@ address {
 
 .header-adress-list {
   display: flex;
-  justify-content: flex-end;
   gap: 40px;
 }
 .address-link {
@@ -175,9 +174,7 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
-  display: block;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding: 24px 0;
 }
 .address-text:focus,
 .address-text:hover {
@@ -189,11 +186,10 @@ address {
    ============================ */
 .hero-section-block {
   background-color: var(--navy-blue);
+  padding: 188px 0;
 }
 .hero-title-btn {
   display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 .hero-section-title {
   text-align: center;
@@ -202,9 +198,11 @@ address {
   line-height: 1.07;
   letter-spacing: 0.02em;
   font-style: var(--main-font-style);
-  width: 48%;
+  max-width: 496px;
   padding-bottom: 48px;
   color: var(--white);
+  display: block;
+  margin: 0 auto;
 }
 .hero-btn {
   font-style: var(--main-font-style);
@@ -215,8 +213,11 @@ address {
   color: var(--white);
   cursor: pointer;
   border-radius: 4px;
-  border-style: none;
-  padding: 16px 32px;
+  border: none;
+  min-width: 169px;
+  height: 56px;
+  display: block;
+  margin: 0 auto;
 }
 
 .hero-btn:focus,
@@ -244,13 +245,15 @@ address {
 
 .benefits-list {
   display: flex;
-  flex-direction: row;
+  /*  flex-direction: row; */
   flex-wrap: wrap;
   gap: 24px;
 }
 
 .benefits-item {
-  width: calc((100% - 72px) / 4);
+  max-width: 264px;
+  flex: content;
+  flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
 .benefits-list-title {
@@ -259,7 +262,7 @@ address {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--navy-blue);
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 .benefits-list-desc {
   font-weight: 400;
@@ -289,16 +292,17 @@ address {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  flex: content;
+  /*  min-width: fit-content; */
 }
 
 .team-card {
   background-color: var(--white);
   width: calc((100% - 72px) / 4);
   padding-bottom: 32px;
+  max-width: 264px;
+  flex: content;
 }
-
-.team-image {
+.team- .team-card .team-image {
   margin-bottom: 32px;
 }
 
@@ -336,17 +340,19 @@ address {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  row-gap: 48px;
 }
 .portfolio-card {
-  width: calc((100% - 72px) / 3);
+  width: calc((100% - 48px) / 3);
   /* padding-bottom: 32px; */
-  border: 1px solid #e7e9fc;
 }
 .portfolio-img {
   /* margin-bottom: 32px; */
 }
 .portfolio-block {
   padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 .portfolio-card-title {
   font-weight: 500;
@@ -354,6 +360,7 @@ address {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--navy-blue);
+  margin-bottom: 8px;
 }
 .portfolio-card-desc {
   font-weight: 400;
@@ -366,6 +373,7 @@ address {
    ============================ */
 .footer-block {
   background-color: var(--navy-blue);
+  padding: 100px 0;
 }
 .footer-text {
   font-weight: 400;
@@ -375,6 +383,11 @@ address {
   color: var(--cloud);
   width: 28%;
 }
+
+.footer-link {
+  margin-bottom: 16px;
+}
+
 /* --------
          footer Logo
 ----------*/
